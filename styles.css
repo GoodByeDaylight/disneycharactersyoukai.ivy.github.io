@@ -1,0 +1,82 @@
+/* 基本スタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 全体の背景色を設定 */
+}
+
+/* ヘッダー */
+header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* 必要に応じて調整 */
+    color: white;
+    text-align: center;
+    background-image: url('img/header-background.jpg'); /* ヘッダー専用の背景画像 */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* ヘッダー下に影を追加 */
+}
+
+/* ヘッダーのタイトル */
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet); /* レインボーグラデーション */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* テキストを透明にして背景グラデーションを適用 */
+}
+
+header p {
+    font-size: 1.6rem;
+    margin: 10px 0 0;
+    color: #0e0606;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    header {
+        height: 200px; /* ヘッダーの高さを調整 */
+    }
+    header h1 {
+        font-size: 4rem;
+    }
+    header p {
+        font-size: 8rem;
+    }
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    header {
+        height: 150px; /* ヘッダーの高さを調整 */
+    }
+    header h1 {
+        font-size: 8rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+}
+/* キャラクター説明文のスタイル */
+.character p {
+    font-size: 1.4rem; /* フォントサイズを拡大 */
+    line-height: 1.8; /* 行間を広げて読みやすく */
+    color: #090909; /* 文字色を少し濃くして視認性を向上 */
+    margin: 10px 0; /* 上下の余白を調整 */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .character p {
+        font-size: 1rem; /* モバイルでは少し小さめに調整 */
+    }
+}
